@@ -1,0 +1,23 @@
+.nav-logo {
+    height: 50px;
+}
+
+.navbar-danger, .btn-danger, footer,  .border.danger{
+    background-color: #EE4D2D;
+}
+.brand,  .border.danger{
+    color: #EE4D2D;
+}
+input {
+    caret-color: #EE4D2D;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+img:hover, .card-body:hover  {
+	filter: contrast(100%); 
+	transition: 0.8s;
+ 	transform: scale(1.1); 
+}
