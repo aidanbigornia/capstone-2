@@ -14,7 +14,7 @@ if(productImage !== "", productName !== "", productPrice !== "", productDescript
 
     let token = localStorage.getItem("token");
 
-    fetch("http://localhost:3000/api/products/add", {
+    fetch("https://sashopee.herokuapp.com/api/products/add", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

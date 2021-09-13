@@ -20,7 +20,7 @@ let password2 = document.getElementById(`password2`).value;
 
     if(password === password2 && password !== "" && password2 !== "" ){
         // fetch
-        fetch("http://localhost:3000/api/users/checkEmail",
+        fetch("https://sashopee.herokuapp.com/api/users/checkEmail",
             {
                 method: "POST",
                 headers: {
@@ -34,7 +34,7 @@ let password2 = document.getElementById(`password2`).value;
         .then(result => result.json())
         .then(result => {
             if(result === false){
-                fetch("http://localhost:3000/api/users/register",
+                fetch("https://sashopee.herokuapp.com/api/users/register",
                     {
                         method: "POST",
                         headers: {

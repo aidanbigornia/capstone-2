@@ -2,7 +2,7 @@ let token = localStorage.getItem("token");
 let adminUser = localStorage.getItem("isAdmin") === "true";
 let cardFooter;
 if (adminUser === false || adminUser === null) {
-    fetch("http://localhost:3000/api/orders/show-cart", 
+    fetch("https://sashopee.herokuapp.com/api/orders/show-cart", 
     {
         method: "GET",
         headers: {

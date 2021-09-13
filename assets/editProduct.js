@@ -11,7 +11,7 @@ let productName = document.querySelector(`#productName`);
 let productPrice = document.querySelector(`#productPrice`);
 let productDescription = document.querySelector(`#productDescription`);
     
-fetch(`http://localhost:3000/api/products/${productId}`,   
+fetch(`https://sashopee.herokuapp.com/api/products/${productId}`,   
     {
         method: "GET",
         headers: {
@@ -36,7 +36,7 @@ editProduct.addEventListener("submit", (e) => {
     productPrice = productPrice.value
     productDescription = productDescription.value
 
-    fetch(`http://localhost:3000/api/products/${productId}/edit`,
+    fetch(`https://sashopee.herokuapp.com/api/products/${productId}/edit`,
         {
             method: "PUT",
             headers: {

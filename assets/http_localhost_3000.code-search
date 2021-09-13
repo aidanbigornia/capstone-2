@@ -1,0 +1,84 @@
+# Query: http://localhost:3000
+# Including: ./ecommerce-client/assets
+# ContextLines: 1
+
+17 results - 11 files
+
+ecommerce-client\assets\addProduct.js:
+  16  
+  17:     fetch("https://sashopee.herokuapp.com/api/products/add", {
+  18          method: "POST",
+
+ecommerce-client\assets\addToCart.js:
+   4  let inputQuantity = document.querySelector("#inputQuantity");
+   5: fetch(`https://sashopee.herokuapp.com/api/products/${productId}`,
+   6      {
+
+  44  .then(result => {
+  45:     fetch("https://sashopee.herokuapp.com/api/orders/addCart", 
+  46      {
+
+  61              if(quantity !== 0 || quantity !== null) {
+  62:                 fetch(`https://sashopee.herokuapp.com/api/orders/${productId}/add-to-cart`, 
+  63                      {
+
+ecommerce-client\assets\archiveProduct.js:
+  6  
+  7: fetch(`https://sashopee.herokuapp.com/api/products/${productId}/archive`,
+  8  	{
+
+ecommerce-client\assets\deleteOrder.js:
+  6  
+  7: fetch(`https://sashopee.herokuapp.com/api/products/${productId}/delete`,
+  8  	{
+
+ecommerce-client\assets\deleteProduct.js:
+  6  
+  7: fetch(`https://sashopee.herokuapp.com/api/products/${productId}/delete`,
+  8  	{
+
+ecommerce-client\assets\editProduct.js:
+  13      
+  14: fetch(`https://sashopee.herokuapp.com/api/products/${productId}`,   
+  15      {
+
+  38  
+  39:     fetch(`https://sashopee.herokuapp.com/api/products/${productId}/edit`,
+  40          {
+
+ecommerce-client\assets\login.js:
+  12    } else {
+  13:     fetch("https://sashopee.herokuapp.com/api/users/login", {
+  14        method: "POST",
+
+  29          if (token) {
+  30:           fetch("https://sashopee.herokuapp.com/api/users/details", {
+  31              method: "GET",
+
+ecommerce-client\assets\products.js:
+   7    adminButton.innerHTML = null;
+   8:   fetch("https://sashopee.herokuapp.com/api/products/active", {
+   9      method: "GET",
+
+  90  
+  91:   fetch("https://sashopee.herokuapp.com/api/products/all", {
+  92      method: "GET",
+
+ecommerce-client\assets\profile.js:
+  4  if (adminUser === false || adminUser === null) {
+  5:     fetch("https://sashopee.herokuapp.com/api/orders/show-cart", 
+  6      {
+
+ecommerce-client\assets\register.js:
+  22          // fetch
+  23:         fetch("https://sashopee.herokuapp.com/api/users/checkEmail",
+  24              {
+
+  36              if(result === false){
+  37:                 fetch("https://sashopee.herokuapp.com/api/users/register",
+  38                      {
+
+ecommerce-client\assets\unarchiveProduct.js:
+  6  
+  7: fetch(`https://sashopee.herokuapp.com/api/products/${productId}/unarchive`,
+  8  	{

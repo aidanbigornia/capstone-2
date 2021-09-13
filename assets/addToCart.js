@@ -2,7 +2,7 @@ let params = new URLSearchParams(window.location.search);
 let productId = params.get('productId');
 let token = localStorage.getItem("token")
 let inputQuantity = document.querySelector("#inputQuantity");
-fetch(`http://localhost:3000/api/products/${productId}`,
+fetch(`https://sashopee.herokuapp.com/api/products/${productId}`,
     {
         method: "GET",
         headers: {
@@ -42,7 +42,7 @@ let container = document.querySelector(`#cartContainer`);
 
 })
 .then(result => {
-    fetch("http://localhost:3000/api/orders/addCart", 
+    fetch("https://sashopee.herokuapp.com/api/orders/addCart", 
     {
         method: "POST",
         headers: {
@@ -59,7 +59,7 @@ let container = document.querySelector(`#cartContainer`);
             let quantity = document.querySelector(`#quantity`).value;
         
             if(quantity !== 0 || quantity !== null) {
-                fetch(`http://localhost:3000/api/orders/${productId}/add-to-cart`, 
+                fetch(`https://sashopee.herokuapp.com/api/orders/${productId}/add-to-cart`, 
                     {
                         method: "POST", 
                         headers: {

@@ -5,7 +5,7 @@ let cardFooter;
 
 if (adminUser === false || adminUser === null) {
   adminButton.innerHTML = null;
-  fetch("http://localhost:3000/api/products/active", {
+  fetch("https://sashopee.herokuapp.com/api/products/active", {
     method: "GET",
     headers: {
       "Authorization": `Bearer ${token}`,
@@ -88,7 +88,7 @@ if (adminUser === false || adminUser === null) {
             </div>
     `;
 
-  fetch("http://localhost:3000/api/products/all", {
+  fetch("https://sashopee.herokuapp.com/api/products/all", {
     method: "GET",
     headers: {
       "Authorization": `Bearer ${token}`,

@@ -10,7 +10,7 @@ loginUser.addEventListener("submit", (e) => {
   if (email === "" || password === "") {
     alert(`Please input required fields`);
   } else {
-    fetch("http://localhost:3000/api/users/login", {
+    fetch("https://sashopee.herokuapp.com/api/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,7 +27,7 @@ loginUser.addEventListener("submit", (e) => {
         let token = result.access;
 
         if (token) {
-          fetch("http://localhost:3000/api/users/details", {
+          fetch("https://sashopee.herokuapp.com/api/users/details", {
             method: "GET",
             headers: {
               Authorization: `Bearer ${token}`,

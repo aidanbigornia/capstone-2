@@ -4,7 +4,7 @@ let productId = params.get('productId');
 
 let token = localStorage.getItem('token');
 
-fetch(`http://localhost:3000/api/products/${productId}/delete`,
+fetch(`https://sashopee.herokuapp.com/api/products/${productId}/delete`,
 	{
 		method: "DELETE",
 		headers: {
